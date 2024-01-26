@@ -3,7 +3,9 @@
     Created on : Jan 20, 2024, 8:40:51 AM
     Author     : Pawan Kumar
 --%>
-
+<%@page import ="org.hibernate.SessionFactory" %>
+<%@page import="com.learn.helper.ConnectionProvider" %>
+<%@page import ="java.sql.Connection" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,6 +15,14 @@
         <%@include file="Components/common_css_js.jsp" %>
     </head>
     <body>
+        <%
+//            SessionFactory factory;
+//            factory=FactoryProvider.getFactory();
+//            out.println(factory);
+            Connection con=ConnectionProvider.getConnection();
+            out.println(con);
+            
+            %>
         <%@include file="Components/navbar.jsp" %>
         <div class="container-fluid index-back-img">
             <h2 style="text-align: center;color: #303f9f;"> Welcome To Alpha Brainly Store ! </h2>

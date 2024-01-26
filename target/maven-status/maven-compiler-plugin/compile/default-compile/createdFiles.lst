@@ -1,5 +1,8 @@
+com\learn\helper\ConnectionProvider.class
 com\learn\helper\FactoryProvider.class
 com\learn\alphabrainly\resources\JakartaEE10Resource.class
+com\learn\servlet\Register.class
 com\learn\entities\User.class
 com\learn\alphabrainly\JakartaRestConfiguration.class
+com\learn\servlet\Login.class
 com\learn\dao\UserDao.class
